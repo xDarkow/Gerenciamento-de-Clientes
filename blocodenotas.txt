@@ -21,13 +21,15 @@
   > Felipe Anderson de Medeiros Araujo  NOME
   > 17061995                            DATA DE NASCIMENTO
   > Rua Coronel Bembem, 375, Paraíba    ENDEREÇO
+  > Caicó                               CIDADE
+  > RN                                  UF
   > 84994798338                         TELEFONE
   > Male                                SEXO
   > felipeanderson_@hotmail.com         EMAIL
-  > 00000001                            USER CODE
-  > x                                   USER STATUS
+  > 00000001                            USER CODE             não visivel na pesquisa
+  > ativo                               USER STATUS           não visivel na pesquisa
 
-  ARQUIVO BINÁRIO vendas\usercode.dat
+  ARQUIVO BINÁRIO vendas/usercode.dat
 
   > 00000001                            USER CODE         INT
   > 210,50                              TOTAL GASTO       FLOAT
