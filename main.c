@@ -13,7 +13,7 @@ struct dados{
   char name[51];
   char bday[11];
   char adress[101];
-  char cidade[31];
+  char cidade[33];
   char uf[3];
   char phone[15];
   char sexo[10];
@@ -71,36 +71,36 @@ Dados* cadastro(){
   printf("Por favor informe os dados dos clientes a seguir!\n\n");
   Dados* dds;
   dds = (Dados*) malloc(sizeof(Dados));
-  printf("CPF:                       ");
+  printf("CPF:                            ");
   scanf(" %14[^\n]", dds->cpf);
   //onlynumb(dds->cpf);
   while(validacpf(dds->cpf)!=1){
     // system("clear");
     printf("\nVocê não digitou um CPF válido!\n");
-    printf("CPF:                       ");
+    printf("CPF:                            ");
     scanf(" %14[^\n]", dds->cpf);
     //onlynumb(dds->cpf);
   }
-  printf("NOME:                      ");
+  printf("NOME:                           ");
   scanf(" %50[^\n]", dds->name);
   while(validaname(dds->name)!=1){
     printf("\nVocê não digitou um Nome válido!\n");
-    printf("NOME:                      ");
+    printf("NOME:                           ");
     scanf(" %50[^\n]", dds->name);
   }
-  printf("DATA DE NASCIMENTO:        ");
+  printf("DATA DE NASCIMENTO(dd/mm/aaaa): ");
   scanf(" %10[^\n]", dds->bday);
-  printf("UF(Unidade Federativa):    ");
+  printf("UF(Unidade Federativa):         ");
   scanf(" %2[^\n]", dds->uf);
-  printf("CIDADE:                    ");
-  scanf(" %30[^\n]", dds->cidade);
-  printf("ENDEREÇO:                  ");
+  printf("CIDADE:                         ");
+  scanf(" %32[^\n]", dds->cidade);
+  printf("ENDEREÇO:                       ");
   scanf(" %100[^\n]", dds->adress);
-  printf("TELEFONE/CELULAR:          ");
+  printf("TELEFONE/CELULAR:               ");
   scanf(" %14[^\n]", dds->phone);
-  printf("SEXO (Masculino/Feminino): ");
+  printf("SEXO (Masculino/Feminino):      ");
   scanf(" %9[^\n]", dds->sexo);
-  printf("EMAIL:                     ");
+  printf("EMAIL:                          ");
   scanf(" %50[^\n]", dds->email);
   return dds;
 }
@@ -111,6 +111,8 @@ void clienteinfo(const Dados* dds){
   printf("CPF:          %s\n", dds->cpf);
   printf("Nome:         %s\n", dds->name);
   printf("Data de nasc: %s\n", dds->bday);
+  printf("UF:           %s\n", dds->uf);
+  printf("Cidade:       %s\n", dds->cidade);
   printf("Endereço:     %s\n", dds->adress);
   printf("Telefone:     %s\n", dds->phone);
   printf("Sexo:         %s\n", dds->sexo);
