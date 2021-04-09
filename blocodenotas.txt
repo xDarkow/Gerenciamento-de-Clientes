@@ -1,3 +1,22 @@
+  > Fazer o CRUD com base na aula do dia 09/04, arquivo da semana 12
+
+
+  ###############################################################################################
+  
+  Relatórios diversos
+    Faixa etária por sexo dos clientes
+    Lista de Compras de um cliente
+    Relatório de vendas por dia (Cada dia criar uma arquivo no formato)
+      dia mes ano
+      Vendas do dia (valor total)
+
+      userid  datatime  sellvalue
+      userid  datatime  sellvalue
+      userid  datatime  sellvalue
+    
+
+  ###############################################################################################
+
   >> Verificar o funcionamento da função only numb junto do bloco de validação de cpf
 
   - funcionamento do onlynumb
@@ -10,6 +29,11 @@
   >> Verificar o problema com o getchar tendo que ser utilizado 2x
   >> Verificar validação de Nome para adicionar acentuação
 
+  ###############################################################################################
+
+  mostrar problema com o "%100[^\n]" e o " %100[^\n]"
+
+  ###############################################################################################
 
   ATENÇÃO >  
 
@@ -26,12 +50,14 @@
   > 84994798338                         TELEFONE
   > Male                                SEXO
   > felipeanderson_@hotmail.com         EMAIL
-  > 00000001                            USER CODE             não visivel na pesquisa
+  > 00000001                            USER ID             não visivel na pesquisa
   > ativo                               USER STATUS           não visivel na pesquisa
 
   ARQUIVO BINÁRIO vendas/usercode.dat
 
-  > 00000001                            USER CODE         INT
+  > 00000001                            USER ID         INT
   > 210,50                              TOTAL GASTO       FLOAT
   > 05/04/2021 15:47  110,5             DATATIME / VALOR  CHAR / FLOAT
   > 06/04/2021 16:21  100               DATATIME / VALOR  CHAR / FLOAT
+
+  ##############################################################################################

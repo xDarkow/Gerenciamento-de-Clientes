@@ -21,8 +21,8 @@ struct dados{
 };
 
 struct vendas{
-  char cpf[15];
-  char date[11];
+  char userid[15];
+  char datatime[18];
   float valor;
 };
 
@@ -66,7 +66,7 @@ int main(void) {
 
 Dados* cadastro(){
   system("clear");
-  printf("=== Cadastro de clientes ===");
+  printf("============== Cadastro de clientes ==============");
   printf("\n\n");
   printf("Por favor informe os dados dos clientes a seguir!\n\n");
   Dados* dds;
