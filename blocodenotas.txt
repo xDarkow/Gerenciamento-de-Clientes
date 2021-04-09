@@ -1,0 +1,35 @@
+  >> Verificar o funcionamento da função only numb junto do bloco de validação de cpf
+
+  - funcionamento do onlynumb
+
+  {'1', '2', '3', '.', '4', '5', '6', '.', '7', '8', '9', '-', '0', '\0'}
+  {'1', '2', '3', '4', '5', '6', '.', '7', '8', '9', '-', '0', '\0', '?'}
+  {'1', '2', '3', '4', '5', '6', '7', '8', '9', '-', '0', '\0', '?', '?'}
+  {'1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '\0', '?', '?', '?'}
+
+  >> Verificar o problema com o getchar tendo que ser utilizado 2x
+  >> Verificar validação de Nome para adicionar acentuação
+
+
+  ATENÇÃO >  
+
+  formatação dos dados de um cliente
+
+  ARQUIVO BINÁRIO clientes.dat
+
+  > 12345678980                         CPF
+  > Felipe Anderson de Medeiros Araujo  NOME
+  > 17061995                            DATA DE NASCIMENTO
+  > Rua Coronel Bembem, 375, Paraíba    ENDEREÇO
+  > 84994798338                         TELEFONE
+  > Male                                SEXO
+  > felipeanderson_@hotmail.com         EMAIL
+  > 00000001                            USER CODE
+  > x                                   USER STATUS
+
+  ARQUIVO BINÁRIO vendas\usercode.dat
+
+  > 00000001                            USER CODE         INT
+  > 210,50                              TOTAL GASTO       FLOAT
+  > 05/04/2021 15:47  110,5             DATATIME / VALOR  CHAR / FLOAT
+  > 06/04/2021 16:21  100               DATATIME / VALOR  CHAR / FLOAT
