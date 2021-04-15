@@ -1,5 +1,13 @@
+  > Criar módulos separados do main para realizar as funções fora a parte
+  > Terminar as validações
+  > Guardar dados em arquivo (aulas da semana 12)
   > Fazer o CRUD com base na aula do dia 09/04, arquivo da semana 12
 
+  /* 
+  https://www.cplusplus.com/reference/cstdio/ftell/
+  fseek (pFile, 0, SEEK_END);   // non-portable
+    size=ftell (pFile);
+  id = size / sizeof(cliente)*/
 
   ###############################################################################################
   
@@ -10,13 +18,13 @@
       dia mes ano
       Vendas do dia (valor total)
 
-      userid  datatime  sellvalue
+      userid  sellid datatime  sellvalue
       userid  datatime  sellvalue
       userid  datatime  sellvalue
     
 
   ###############################################################################################
-
+  **
   >> Verificar o funcionamento da função only numb junto do bloco de validação de cpf
 
   - funcionamento do onlynumb
